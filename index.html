@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>Vike SBF</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="./css/w3.css">
+	<link rel="stylesheet" href="./css/custom.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+	<link rel="icon" href="./graphics/icon.png">
+	<meta charset="utf-8">
+
+	<!-- Accordion Animation -->
+	<style>
+		button.accordion {
+			background-color: #eee;
+			color: #444;
+			cursor: pointer;
+			padding: 18px;
+			width: 100%;
+			border: none;
+			text-align: left;
+			outline: none;
+			font-size: 15px;
+			transition: 0.4s;
+		}
+
+		button.accordion.active, button.accordion:hover {
+			background-color: #ddd;
+		}
+
+		div.panel {
+			padding: 0 18px;
+			background-color: white;
+			max-height: 0;
+			overflow: hidden;
+			transition: max-height 0.2s ease-out;
+		}
+	</style>
+
+</head>
+<body>
+
+	<div class="w3-display-container w3-card" style="margin: auto;">
+		<header class="w3-container w3-blue">
+			<!-- NAVIGATION -->
+			<div class="w3-content w3-mobile w3-blue" style="padding: 10px 0px 10px 0px;">
+				<a href="./index.html" class="w3-bar-item w3-hover-white w3-button w3-border-right w3-border-left"><i>Vike S.B.F.</i></a>
+
+				<img class="w3-hide-small" id="navIcon" src="./graphics/iconw.png">
+
+				<style type="text/css">
+					#navIcon {
+						max-height: 40px;
+						position: absolute;
+						left: 50%;
+						transition: all 0.6s ease-in-out 0s;
+					}
+
+					#navIcon:hover {
+						cursor: default;
+						transform: rotate(360deg);
+						transition: all 0.6s ease-in-out 0s;
+					}
+				</style>
+
+				<a href="./tidevann.html" class="w3-bar-item w3-hover-white w3-button w3-right w3-border-right">Tidevann</a>
+				<a href="./album.html" class="w3-bar-item w3-hover-white w3-button w3-right w3-border-right w3-border-left">Fotoalbum</a>
+			</div>
+		</header>
+	</div>
+
+	<!-- LANDING IMAGE -->
+	<div> <!-- Make this roll pls, paralaxxx.. -->
+		<img class="w3-image" src="./graphics/landing/landingMain.png">
+	</div>
+
+	<!-- Directory listing? -->
+
+	<!-- CONTENT CONTENT CONTENT CONTENT -->
+	<div class="w3-display-container w3-content" style="margin-top: 10px;">
+
+
+		<div class="w3-container" style="margin-bottom: 100px;">
+
+			<h2 class="w3-wide w3-panel w3-white" style="text-align: center;"><i>Vike Småbåtforening</i></h2>
+			<!-- <h3 class="w3-alert w3-wide" style="text-align: center; color: gray; padding-bottom: 30px;">Ny havn, åpnet <u><i>14.05.16</i></u></h3> -->
+			<h3 class="w3-alert w3-wide" style="text-align: center; color: gray; padding-bottom: 30px;">Møre og Romsdal, 6392 Vikebukt</h3>
+			
+			<div class="w3-panel w3-pale-green w3-display-container">
+				<span onclick="this.parentElement.style.display='none'"
+				class="w3-button w3-display-topright">&times;</span>
+				<h4>Info!</h4>
+				<p style="font-size: 0.9em;">Den nye småbåtshavna på Vikebukt åpnet 14.05.16, kontakt oss angående kjøp av båtplass!</p>
+			</div>
+
+		<button class="accordion w3-blue w3-card w3-border-bottom" style="text-align: center;">Vær</button>
+		<div class="panel" style="overflow-x: scroll;">
+
+			<script src="http://www.yr.no/sted/Norge/Møre_og_Romsdal/Vestnes/Vikebukt/ekstern_boks_time_for_time.js"></script>
+			<noscript><a href="http://www.yr.no/sted/Norge/Møre_og_Romsdal/Vestnes/Vikebukt/">yr.no: Værvarsel for Vikebukt</a></noscript>
+
+		</div>
+
+		<button class="accordion w3-blue w3-card w3-border-bottom" style="text-align: center;">Kontakt</button>
+		<div class="panel" style="overflow-x: scroll;">
+
+			<div style="height: 30px"></div> <!-- SPACER SPACER -->
+
+			<div class="w3-panel w3-border-blue w3-white w3-round-large w3-leftbar w3-rightbar w3-center" style="max-width: 60%; margin: auto;">
+				<p><b>Brevpost</b> sendes til:<br><br>
+
+					Vike Småbåtforening ved Bjørn Ove Ulla<br>
+					Heen-feltet<br>
+					6392 Vikebukt
+				</p>
+			</div>
+
+			<div style="height: 50px"></div> <!-- SPACER SPACER -->
+
+			<!-- TABLE WITH CONTACT INFO -->
+			<table class="w3-table w3-bordered">
+				<tr>
+					<th></th>
+					<th>Navn</th>
+					<th>Epost</th>
+					<th>Telefon<br></th>
+				</tr>
+				<tr>
+					<td>Formann</td>
+					<td>Bjørn Ove Ulla<br></td>
+					<td>bjorn.ulla@timpex.no</td>
+					<td>924 34 571<br></td>
+				</tr>
+				<tr>
+					<td>Nest formann<br></td>
+					<td>Ola Vik<br></td>
+					<td>ola.vik@nasta.no<br></td>
+					<td>977 53 093<br></td>
+				</tr>
+				<tr>
+					<td>Kasserer</td>
+					<td>Sveinung Dragnes<br></td>
+					<td>sveinung.dragnes@online.no</td>
+					<td>938 44 396<br></td>
+				</tr>
+				<tr>
+					<td>Referent</td>
+					<td>Jan Olav Forland<br></td>
+					<td>jan.olav.forland@mibox.no</td>
+					<td>903 53 720<br></td>
+				</tr>
+				<tr>
+					<td>Styremedlem</td>
+					<td>Odd Johnny Villa<br></td>
+					<td>oj.villa@hotmail.com</td>
+					<td>917 80 424<br></td>
+				</tr>
+			</table>
+			<div style="height: 100px"></div> <!-- SPACER SPACER -->
+		</div>
+
+		<button class="accordion w3-blue w3-card w3-border-bottom" style="text-align: center;">Kart</button>
+		<div class="panel">
+			<iframe
+			width="100%"
+			height="450"
+			frameborder="0" style="border:0"
+			src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCzyZeW3EZqCwg4ATTjpywvHuvAGoZ-ovo
+			&q=Vikebukt" allowfullscreen>
+		</iframe>
+	</div>
+
+<!-- 		<a href="./album.html"><button class="accordion w3-blue w3-card w3-border-bottom" style="text-align: center;">Bilder</button></a>
+		<div class="panel">
+
+		</div> -->
+
+		<script>
+			var acc = document.getElementsByClassName("accordion");
+			var i;
+
+			acc[0].classList.toggle("active");
+
+			for (i = 0; i < acc.length; i++) {
+				acc[i].onclick = function() {
+					this.classList.toggle("active");
+					var panel = this.nextElementSibling;
+					if (panel.style.maxHeight){
+						panel.style.maxHeight = null;
+					} else {
+						panel.style.maxHeight = panel.scrollHeight + "px";
+					}
+				}
+			}
+		</script>
+	</div>
+</div>
+
+<div class="w3-display-container">
+	<p class="w3-display-bottommiddle" style="font-size: 0.7em";>
+		© Vike Småbåtforening 2016/2017	
+	</p>
+</div>
+
+
+
+
+</body>
+</html>
