@@ -47,41 +47,14 @@
     }
   </script>
 
-  <button class="w3-button w3-display-left w3-black" style="position: fixed; margin-left: 2%;"
-    onclick="plusDivs(-1)">&#10094;</button>
-  <button class="w3-button w3-display-right w3-black" style="position: fixed; margin-right: 2%;"
-    onclick="plusDivs(1)">&#10095;</button>
+<ul id="lightSlider">
+    <li>
+        <img src="http://sachinchoolur.github.io/lightslider/img/cS-1.jpg" />
+    </li>
+</ul>
 
   </div>
 
-  <div class="w3-container w3-content w3-display-bottom">
-    <div class="w3-panel w3-pale-blue w3-display-container">
-      <span onclick="this.parentElement.style.display='none'" class="w3-button w3-display-topright">&times;</span>
-      <h4>Info!</h4>
-      <p style="font-size: 0.9em;">Her er en samling av bilder tilknyttet den nye småbåtshavna på Vikebukt. Bruk pilene
-        på venstre og høyre side for å bla gjennom bildene.</p>
-    </div>
-  </div>
-
-  <script>
-    var slideIndex = 1; // initial index (i.e. foer/1 is first image to be shown)
-    showDivs(slideIndex);
-
-    function plusDivs(n) {
-      showDivs(slideIndex += n);
-    }
-
-    function showDivs(n) {
-      var i;
-      var x = document.getElementsByClassName("mySlides");
-      if (n > x.length) { slideIndex = 1 } // if the slideIndex goes over max images, rollover to 1
-      if (n < 1) { slideIndex = x.length }
-      for (i = 0; i < x.length; i++) { // hide all images
-        x[i].style.display = "none";
-      }
-      x[slideIndex - 1].style.display = "block"; // ... except one
-    }
-  </script>
 
 </body>
 
